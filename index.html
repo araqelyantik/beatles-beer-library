@@ -1,0 +1,14 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>The Beatles Pub — Beer Library</title><link rel='stylesheet' href='style.css'></head><body>
+<div class='app'>
+<header><div class='brand'><b>THE<br><span>BEATLES PUB</span></b><small>YEREVAN</small></div><button id='reset' class='link'>RESET CARD</button></header>
+<main>
+<section class='card'>
+<div class='cardHead'><div><h1>BEER LIBRARY CARD</h1><h2>KEEP THIS CARD THIRSTY</h2></div><div class='number'>№ <span id='cardNo'>001284</span></div></div>
+<div class='meta'><label>NAME <input id='name' value='Tigran Arakelyan'></label><label>MEMBER SINCE <span id='since'></span></label><p>Each stamp represents<br>a beer you have tried<br>at The Beatles Pub.</p></div>
+<div id='grid' class='grid'></div>
+</section>
+<button id='stampBtn' class='stampBtn'>＋ STAMP A BEER</button>
+</main></div>
+<div id='sheet' class='sheet hidden'><div class='sheetInner'><div class='sheetTop'><h3>STAMP A BEER</h3><button id='close'>×</button></div><input id='search' class='search' placeholder='Search beer, style, country…'><div id='beerList' class='beerList'></div></div></div>
+<div id='detail' class='sheet hidden'><div class='sheetInner detail'><div class='sheetTop'><h3 id='detailName'></h3><button id='detailClose'>×</button></div><p id='detailMeta'></p><label>YOUR RATING <select id='rating'><option value=''>—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select> / 5</label><label>YOUR NOTE<textarea id='note' placeholder='Fruity, smooth, would order again…'></textarea></label><button id='saveDetail' class='stampBtn'>SAVE</button><button id='removeBeer' class='danger'>REMOVE STAMP</button></div></div>
+<script src='app.js'></script></body></html>
